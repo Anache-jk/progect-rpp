@@ -1,0 +1,26 @@
+#bigtext{
+    font-size: 20px;
+    max-width: 320px;
+    min-width: 200px;
+}
+tbody{
+    font-size: 17px;
+}
+td{
+    max-width: 15px;
+}
+table{
+    max-width: 300px;
+    border-radius: 10px;
+    background-image: url('https://atlantplitka.ru/wp-content/uploads/Melissa-Перламутр-MSM501D.jpg');
+    border-spacing: 8px 5px;
+    border-collapse: separate;  
+    box-shadow: 0 0 8px grey;
+    text-align: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .h1{
+        display: none;
+    }
+}

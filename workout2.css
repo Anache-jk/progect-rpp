@@ -1,0 +1,39 @@
+#bigtext{
+    font-size:15px;
+}
+table{
+    max-width: 1000px;
+    border-radius: 10px;
+    background-image: url('https://atlantplitka.ru/wp-content/uploads/Melissa-Перламутр-MSM501D.jpg');
+    border-spacing: 8px 5px;
+    border-collapse: separate;  
+    box-shadow: 0 0 8px grey;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+hr#tak{
+    border: none; /* Убираем границу */
+    border-radius: 5px;
+    background-color: rgb(235, 170, 150); /* Цвет линии */
+    color: rgb(212, 179, 179); /* Цвет линии для IE6-7 */
+    height: 50%; /* Толщина линии */
+    width:90%;
+   }
+@media (max-width: 576px) {
+    table{
+        border-radius: 10px;
+        background-image: url('https://atlantplitka.ru/wp-content/uploads/Melissa-Перламутр-MSM501D.jpg');
+        border-spacing: 8px 5px;
+        border-collapse: separate;  
+        box-shadow: 0 0 8px grey;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #tak{
+        font-size: 20px;
+       }
+       
+}
