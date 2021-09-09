@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset = "utf-8" content="width=device-width, initial-scale=1.0" >
+<title> БАЛЛЫ</title>
+<link rel="shortcut icon" href="img/formlogo.ico" type="image/x-icon">
+<link href = "Form2.css" rel = "stylesheet" type = "text/css" >
+<link href = "main2.css" rel = "stylesheet" type = "text/css" >
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Modak&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<header>
+<nav id = "up" class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class = "container-fluid">
+        
+        <div class = "flex-column"><a href = "main2.html" class = "navbar-brand"><small class="text-muted"></small><img src = "img/logo.png" class = "container" id = "logo" ></a></div>
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target="#navbarResponsive">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id = "navbarResponsive">
+            <ul class = "navbar-nav m-lg-auto">
+                <li class = "nav-item">
+                    <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle align-items-center" data-toggle="dropdown"> Основы </button>
+                    <div class="dropdown-menu">
+                        <a class="nav-link" href="Eating2.html"><b>Правильное питание</b></a>
+                        <a class="nav-link" href="workout2.html"><b>Спорт</b></a>
+                        <a class="nav-link" href="Mystry2.html"><b>Моя история</b></a>
+                      </div>
+                      </div>
+                </li>
+                  <li class = "nav-item">
+                      <div class="dropdown">
+                      <button type="button" class="btn dropdown-toggle align-items-center" data-toggle="dropdown"> Заблуждения </button>
+                      <div class="dropdown-menu">
+                          <a class="nav-link" href="oil2.html"><b>Масла</b></a>
+                          <a class="nav-link" href="Sugar2.html"><b>Сахара</b></a>
+                        </div>
+                        </div>
+                  </li>
+            </ul>
+        </div>
+        <div class = "d-flex flex-row">
+            <button class = "btn w-2 btn-light">
+                <a href = "#pup" style = "color: black;font-size: 20px;"> 
+                &#9650;</a></button>
+            <button class = "btn w-2 btn-light">	
+               <a href = "#subbutton" style = "color: black;font-size: 20px;"> &#9660;</a></button></div>
+    </div>
+ 
+</nav>
+    
+
+   </header>
+<body id = "pup" style = "padding-top: 80px;">
+
+<form name="tay" class = "container-fluid d-flex justify-content-center col-sm-4" >
+<div class = "huch">
+<div class = "down">
+<fieldset class = "grew10 p-4">
+<legend class = "p-4"><h3>Данные студента</h3></legend>
+<h4>ФИО студента:</h4>
+<input name = "student" type="login" value = "Ваше имя" id = "stud" autofocus required><small id = "err0">Введите имя заново</small>
+ <h4> Группа: </h4>
+<select name="group_number" required>
+<option> Выберете группу </option>
+ <option> ПИ-201 </option>
+ <option> ПИ-202 </option> 
+ </select>
+ <small id = "err7">Студент без группы, как коралл без океана...</small>
+ <h4> Количество страниц: </h4> 
+<select name="pages_number" required>
+<option value="5">5 </option>
+<option value="6">6 </option>
+<option value="7">7 </option>
+<option value="8">8 </option>
+<option value="9">9 </option>
+<option value="10">10 </option>
+</select>
+
+ </fieldset>
+
+ <fieldset class = "grew5 p-4">
+    <legend class = "p-4"> <h3> Количество CSS-файлов в проекте </h3></legend>
+    <p><input  name = "quantity_css_file" type="number" min = "0" required></p>
+    </fieldset>
+
+<fieldset class = "grew5 p-4">
+<legend class = "p-4"> <h3> Общая оценка эстетичности</h3></legend> <p style = "font-size: 15px;">&#10134;<input  name = "esteticrange" type = "range" value="0" min="0" max="100" step="1" required />&#10133;
+</p>
+</fieldset>
+
+<fieldset class = "grew5 p-4">
+<legend class = "p-4"> <h3> Общая оценка функциональности</h3></legend> <p style ="font-size: 15px;"> &#10134;<input  name = "functionalrange" type = "range" value="0" min="0" max="100" step="1" required />&#10133;
+</p>
+</fieldset>
+
+
+
+<fieldset class = "grew8 p-4">
+<legend class = "p-4"> <h3> Проект выражен </h3> </legend>
+ <p><input type = "radio" name = "contact" value = "graficelement" id="contactChoice1" ><label for="contactChoice1">большим графическим элементом</label></p>
+ <p><input type = "radio" name = "contact" value = "slides" id="contactChoice1" ><label for="contactChoice1">слайдером</label></p>
+ <p><input type = "radio" name = "contact" value = "blockanimation" id="contactChoice1" ><label for="contactChoice1">блоком с анимацией </label></p>
+ <p><input type = "radio" name = "contact" value = "specific menu" id="contactChoice1" ><label for="contactChoice1">специфическим отображением меню</label></p>
+<p id = "content0"><input type = "radio" name = "contact" value = "other" id="contactChoice1" ><label for="contactChoice1">другое:</label></p>
+<input type = "text" name = "super0" id = "sup0" value = "Введите другое">
+<small id = "err1">Введите другие элементы...</small>
+ </fieldset>
+ 
+ <fieldset class = "khe p-4"> <legend class = "p-4"><h3> Ответьте только да или нет</h3></legend>
+ <fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Единый дизайн для всего проекта? </h3></legend>
+ <div><label for="contactChoice2" class="container"><b>Да</b>
+    <input type = "radio" id="contactChoice2" name="yesnop"
+value="oncedesign[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice2"><b>Нет</b>
+    <input type = "radio" name="yesnop" value="oncedesign[‘no’]" id="contactChoice2">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" ><legend class = "p-4"> <h3> Индивидуальный дизайн для главной
+страницы? </h3></legend>
+<div><label for="contactChoice3" class="container"><b>Да </b>
+<input type = "radio" name="yesno"  value="individualdesign[‘yes’]" id="contactChoice3">
+</label></div>
+ <div><label class="container" for="contactChoice3"><b>Нет </b>
+ <input type = "radio" name="yesno" value="" id="contactChoice3">
+</label></div>
+
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Адаптивная верстка? </h3></legend>
+ <div><label for="contactChoice4" class="container" ><b>Да</b>
+    <input type = "radio" id="contactChoice4" name="adaptivedesign" value="adaptivedesign[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice4"><b>Нет</b>
+    <input type = "radio" id="contactChoice4" name="adaptivedesign" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Использование медиазапросов присутствует? </h3></legend>
+ <div><label class="container" for="contactChoice5"><b>Да</b>
+    <input type = "radio" id="contactChoice5" name="mediarequest" value="mediarequest[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice5"><b>Нет</b>
+    <input type = "radio" id="contactChoice5" name="mediarequest" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Перекомпоновка блоков имеется? </h3></legend>
+ <div><label class="container" for="contactChoice6"><b>Да</b>
+    <input type = "radio" id="contactChoice6" name="reflowblocks" value="reflowblocks[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice6"><b>Нет</b>
+    <input type = "radio" id="contactChoice6" name="reflowblocks" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Выпадающее меню реализовано? </h3></legend>
+ <div><label class="container" for="contactChoice7"><b>Да</b>
+    <input type = "radio" id="contactChoice7" name="dropdownmenu" value="dropdownmenu[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice7"><b>Нет</b>
+    <input type = "radio" id="contactChoice7" name="dropdownmenu" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Галерея изображений сделана? </h3></legend>
+ <div><label class="container" for="contactChoice8"><b>Да</b>
+    <input type = "radio" id="contactChoice8" name="galleryofimg" value="galleryofimg[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice8"><b>Нет</b>
+    <input type = "radio" id="contactChoice8" name="galleryofimg" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4" required><legend class = "p-4"><h3> Выполнена дополнительная лабораторная
+№10? </h3></legend>
+ <div><label class="container" for="contactChoice9"><b>Да</b>
+    <input type = "radio" id="contactChoice9" name="superlab" value="superlab[‘yes’]">
+</label>
+</div>
+<div><label class="container" for="contactChoice9"><b>Нет</b>
+    <input type = "radio" id="contactChoice9" name="superlab" value="">
+</label>
+</div>
+</fieldset>
+
+<fieldset class = "bruh p-4"><legend class = "p-4"><h3> Есть что-то из неназванного? </h3></legend>
+ <div><h4> Введите неназванное:</h4><input type = "text"  rows="10" cols="45" name = "uncalled" value = ""> 
+</div>
+</fieldset>
+</fieldset>
+ 
+ <fieldset class = "grew9 p-4">
+<legend class = "p-4"> <h3> Главная страница выражена </h3> </legend>
+<p><input type = "radio" name = "effmenu" value = "главного меню " id = "effmenu" ><label for="effmenu">большим графическим элементом</label></p>
+ <p id = "content1"><input type = "radio" name = "effmenu" value = "дополнительного меню" id = "effmenu" ><label for="effmenu">дополнительным меню</label></p>
+ <input type = "text" name = "super1" id = "super1" value = "Введите ссылку на доп.меню">
+ <small id = "err2">Ну хотя бы скопируйте ссылку...</small>
+</fieldset>
+ 
+
+
+ 
+ <fieldset class = "grew3 p-4"><legend class = "p-4"><h3> Использованные эффекты </h3></legend>
+ <div class = "crown">
+ <div><p><label> <b>filter</b>
+    <input type="checkbox" name="have_sectionfilter"
+value="ds" onclick = "changeval(0)" >
+</label></p>
+</div>
+<div><p><label> <b>content</b>
+    <input type="checkbox" name="have_sectioncontent"
+value="ds" onclick = "changeval(1)">
+</label></p>
+</div>
+<div><p><label> <b>display</b>
+    <input type="checkbox" name="have_sectiondisplay"
+value="ds" onclick = "changeval(2)">
+</label></p>
+</div>
+<div><p><label> <b>background</b>
+    <input type="checkbox" name="have_sectionbackground"
+value="ds" onclick = "changeval(3)">
+</label></p>
+</div>
+</div>
+
+<div class = "crown">
+<p><label><b> text-align</b>
+    <input type="checkbox" name="have_sectiontextalign"
+value="ds" onclick = "changeval(4)">
+</label></p>
+
+<p><label> <b>border</b>
+    <input type="checkbox" name="have_sectionborder"
+value="ds" onclick = "changeval(5)">
+</label></p>
+
+<p><label> <b>color</b>
+    <input type="checkbox" name="have_sectioncolor"
+value="ds" onclick = "changeval(6)">
+</label></p>
+<p><label> <b>:hover</b>
+    <input type="checkbox" name="have_sectionhover"
+value="ds" onclick = "changeval(7)"></p>
+</label>
+</div>
+<h4> Введите неназванное:</h4><input type = "text" rows="10" cols="45" name = "uncalled2" value = "">
+</fieldset>
+
+<fieldset class = "grew1 p-4"><legend class = "p-4"><h3> Требования </h3></legend>
+<fieldset class = "go p-4" >
+<legend class = "p-4"><h4> Трансформация есть?</h4></legend>
+ <div><p><label class="container" for="contactChoice10">Да
+    <input type = "radio" id="contactChoice10" name="transformation" value="transformationyes">
+</label></p>
+<p><b>Трансформация находится тут:</b><input type = "text" name = "super2"></p>
+</div>
+<div id = "err3">Если выбрал, то введи...</div>
+<div class = "d-flex justify-content-start"><p><label for="contactChoice10"><input type = "radio" id="contactChoice10" name="transformation" value="transformationno">Нет
+    
+</label></p>
+</div>
+</fieldset>
+
+
+<fieldset class = "go p-4" >
+<legend class = "p-4"><h4> Анимация есть?</h4></legend>
+ <div><p><label for="contactChoice11">Да
+    <input type = "radio" id="contactChoice11" name="animation" value="animationyes">
+</label></p>
+<p><b>Анимация находится тут:<input type = "text" name = "super3" id = "super3"></b></p>
+
+</div>
+<div  id = "err4">Если выбрал, то введи...</div>
+<div class = "d-flex justify-content-start"><p><label class="container" for="contactChoice11"><input type = "radio" id="contactChoice11" name="animation" value="animationno">Нет
+    
+</label></p>
+</div>
+</fieldset>
+
+
+<fieldset class = "go p-4">
+<legend class = "p-4"><h4> Переходы есть?</h4></legend>
+ <div><p><label for="contactChoice12">Да
+    <input type = "radio" id="contactChoice12" name="transitions" value="transitionsyes">
+</label></p>
+<p><b>Переходы находятся тут:</b><input type = "text" name = "super4" id = "super4"></p>
+</div>
+<div  id = "err5">Если выбрал, то введи...</div>
+<div class = "d-flex justify-content-start">
+    <p><label for="contactChoice12"><input type = "radio" id="contactChoice12" name="transitions" value="transitionsno">Нет
+    
+</label></p>
+</div>
+</fieldset>
+</fieldset>
+
+<fieldset class = "khe23 p-4" >
+<legend class = "p-4"><h3> Обратная связь есть? </h3></legend>
+ <div><p><label for="contactChoice13">Да
+    <input type = "radio" id="contactChoice13" name="reverselink" value="reverselinkyes" >
+</label></p>
+<p><b>Обратная связь здесь:</b><input type = "text" name = "super5" id = "super5"></p>
+</div>
+<div id = "err6">Если выбрал, введи...</div>
+<div class = "d-flex justify-content-start"><p><label for="contactChoice13"><input type = "radio"  id="contactChoice13" name="reverselink" value="reverselinkno" >Нет
+    
+</label></p>
+</div>
+
+</fieldset>
+
+ <fieldset class = "khe23 p-4">
+<legend class = "p-4"> <h3> Использование тегов разделов документа </h3> </legend> <select multiple name = "tegsdocument" required>
+ <option value="header">1.header &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp           </option>
+ <option value="nav"> 2.nav</option>
+  <option value="footer"> 3.footer </option>
+ <option value="section">4.section</option>
+  <option value="article">5.article</option>
+ <option value="aside">6.aside</option>
+  </select>
+ </fieldset>
+ <p class = "sub p-4"> <input type = "submit" value = "ОТПРАВИТЬ ФОРМУ" onclick = "formsend(event)" id = "subbutton"></p>
+ </div>
+</div>
+</form>
+
+    
+<script>
+    "use strict"
+    const form = document.forms.tay;
+    let yesno = ["0", "0","0", "0","0", "0","0", "0"];
+    let effects = ["0", "0","0", "0","0", "0","0", "0"];
+    effects[0] = form.elements.have_sectionfilter;
+    effects[1] = form.elements.have_sectioncontent;
+    effects[2] = form.elements.have_sectiondisplay;
+    effects[3] = form.elements.have_sectionbackground;
+    effects[4] = form.elements.have_sectiontextalign;
+    effects[5] = form.elements.have_sectionborder;
+    effects[6] = form.elements.have_sectioncolor;
+    effects[7] = form.elements.have_sectionhover;
+    let create = ["1", "0","0", "0","0", "0","0", "0"];
+    let poin = 1;
+    
+    /*function createel(i){
+        if(poin == 1){
+        let element = document.getElementById(`content${i}`);
+        create[i] = document.createElement('input');
+        create[i].name = `super${i}`;
+        create[i].type = 'text';
+        create[i].id = `super${i}`;
+        create[i].value = 'Введите нужное';
+        element.after(create[i]);
+        }
+        else{
+            return 0;
+        }
+    }*/
+     
+    function allLetter(uname)
+    { 
+    var letters = /^[A-Za-zа-яА-Я]+$/;
+    if(uname.value.match(letters))
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    }
+    function Letter(uname)
+    { 
+    var letters = /^[а-яА-Я]+$/;
+    if(uname.value.match(letters))
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    }
+    
+    function changeval(i){
+        //let form = document.forms.tay;
+        //effects[i] = form.elements.nam;
+        if((effects[i].value == "dab")){
+            effects[i].value = "ds";
+        }
+        else{
+        effects[i].value = "dab";
+        }
+    }
+    
+    function remov(i){
+        poin = 1;
+        create[i].remove();
+        text.style.display = "none";
+    }
+        
+        function formsend(event){
+            let balls = 0;
+        event.preventDefault();
+        let points = 1;
+        let err0 = document.getElementById('err0');
+        let err1 = document.getElementById('err1');
+        let err2= document.getElementById('err2');
+        let err3 = document.getElementById('err3');
+        let err4 = document.getElementById('err4');
+        let student = form.elements.student;
+        let super0 = form.elements.super0;
+        let super1 = form.elements.super1;
+        let super2 = form.elements.super2;
+        let super3 = form.elements.super3;
+        let super4 = form.elements.super4;
+        let super5 = form.elements.super5;
+        let group = form.elements.group_number;
+        let page = form.elements.pages_number;
+        let rangeest = form.elements.esteticrange;
+        let funcrangeest = form.elements.functionalrange;
+        let quantityofcss = form.elements.quantity_css_file;
+        let contact = form.elements.contact;
+        let trans = form.elements.transformation;
+        let anim = form.elements.animation;
+        let pereh = form.elements.transitions;
+        let revlink = form.elements.reverselink;
+        yesno[0] = form.elements.yesnop;
+        yesno[1] = form.elements.yesno;
+        yesno[2] = form.elements.adaptivedesign;
+        yesno[3] = form.elements.mediarequest;
+        yesno[4] = form.elements.reflowblocks;
+        yesno[5] = form.elements.dropdownmenu;
+        yesno[6] = form.elements.galleryofimg;
+        yesno[7] = form.elements.superlab;
+        let effectofmenu = form.elements.effmenu;
+        let uncalled = form.elements.uncalled;
+        let uncalled2 = form.elements.uncalled2;
+        let tegsdocument = form.elements.tegsdocument;
+     
+    let text = document.createElement('div');
+    text.innerHTML = "Надо нормально ввести вообщето...";
+    text.id = 'text';
+    text.style.color = "red";
+    
+    student.onblur = function(event){
+        if(student.value ==""){
+            student.style.backgroundColor = 'red';
+            err0.style.display = "block";
+        }
+        else if(student.value == "Ваше имя"){
+            student.style.backgroundColor = 'red';
+        err0.style.display = "block";
+        points = points - 1000;
+    }
+    else if(allLetter(student)==false){
+            student.style.backgroundColor = 'red';
+            err0.style.display = "block";
+            points = points - 1000;
+    }
+        else{
+            student.style.backgroundColor =  'white';
+            err0.style.display = "none";
+        }
+    }
+    
+    student.onfocus = function(event){
+        student.style.backgroundColor =  'white';
+    }
+    
+    
+    if(student.value == ""){
+        student.style.backgroundColor = 'red';
+        err0.style.display = "block";
+        points = points - 1000;
+    }
+    else if(student.value == "Ваше имя"){
+            student.style.backgroundColor = 'red';
+        err0.style.display = "block";
+        points = points - 1000;
+    }
+    else if(allLetter(student)==false){
+            student.style.backgroundColor = 'red';
+            err0.style.display = "block";
+            points = points - 1000;
+    }
+    else{
+        student.style.backgroundColor =  'white';
+        err0.style.display = "none";
+        points++;
+    }
+
+    if(group.value == ""){
+        err7.style.display = "block";
+        points = points - 1000;
+    }
+    else if(group.value == "Выберете группу"){
+        err7.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        err7.style.display = "none";
+        points++;
+    }
+    
+    if(contact.value == "other"){
+    if(super0.value == ""){
+        super0.style.backgroundColor = 'red';
+        err1.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super0.value == "Введите другое"){
+        super0.style.backgroundColor = 'red';
+        err1.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super0.value == "другое"){
+        super0.style.backgroundColor = 'red';
+        err1.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super0.value == "Другое"){
+        super0.style.backgroundColor = 'red';
+        err1.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super0.style.backgroundColor =  'white';
+        err1.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super0.style.backgroundColor =  'white';
+        err1.style.display = "none";
+    }
+    if((contact.value != "other")&(contact.value != "")){
+        balls = balls + 1;
+    }
+    
+    if(effectofmenu.value == "дополнительного меню"){
+    if(super1.value == ""){
+        super1.style.backgroundColor = 'red';
+        err2.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super1.value == "Введите ссылку на доп.меню"){
+        super1.style.backgroundColor = 'red';
+        err2.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super1.value == "Ссылка на доп.меню"){
+        super1.style.backgroundColor = 'red';
+        err2.style.display = "block";
+        points = points - 1000;
+    }
+    else if(super1.value == "ссылку на доп.меню"){
+        super1.style.backgroundColor = 'red';
+        err2.style.display = "block";
+        points = points - 1000;
+    }
+    else if(Letter(super1)==true){
+        super1.style.backgroundColor = 'red';
+        err2.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super1.style.backgroundColor =  'white';
+        err2.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super1.style.backgroundColor =  'white';
+        err2.style.display = "none";
+    }
+    
+    if(trans.value == "transformationyes"){
+    if(super2.value == ""){
+        super2.style.backgroundColor = 'red';
+        err3.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super2.style.backgroundColor =  'white';
+        err3.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super2.style.backgroundColor =  'white';
+        err3.style.display = "none";
+    }
+    
+    
+    if(anim.value == "animationyes"){
+    if(super3.value == ""){
+        super3.style.backgroundColor = 'red';
+        err4.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super3.style.backgroundColor =  'white';
+        err4.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super3.style.backgroundColor =  'white';
+        err4.style.display = "none";
+    }
+    
+    if(pereh.value == "transitionsyes"){
+    if(super4.value == ""){
+        super4.style.backgroundColor = 'red';
+        err5.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super4.style.backgroundColor =  'white';
+        err5.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super4.style.backgroundColor =  'white';
+        err5.style.display = "none";
+    }
+    
+    if(revlink.value == "reverselinkyes"){
+    if(super5.value == ""){
+        super5.style.backgroundColor = 'red';
+        err6.style.display = "block";
+        points = points - 1000;
+    }
+    else{
+        super5.style.backgroundColor =  'white';
+        err6.style.display = "none";
+        points++;
+        balls = balls + 1;
+    }
+    }else{
+        super5.style.backgroundColor =  'white';
+        err6.style.display = "none";
+    }
+    
+    if(uncalled.value != ""){
+        balls = balls + 1;
+    }
+    if(uncalled2.value != ""){
+        balls = balls + 1;
+    }
+    for(let i = 0; i<8; i++){
+       if(effects[i].value!="ds"){
+        balls = balls + 1;
+    }
+        if(yesno[i].value!=""){
+            balls = balls + 1;
+        }
+    }
+    
+    if(tegsdocument.value != ""){
+        balls = balls + 1;
+    }
+    if(funcrangeest.value > 50){
+        balls = balls + 1;
+    }
+    if(rangeest.value > 50){
+        balls = balls + 1;
+    }
+    
+    if(points>0){
+        if(balls>15){
+       alert(`Студент ${student.value} из группы ${group.value} получает ${balls} баллов! Поздравляем, это больше половины!` );
+       document.location.reload();
+    }
+    else if(balls>10){
+        alert(`Студент ${student.value} из группы ${group.value} получает ${balls} баллов! Поздравляем, это довольно неплохо для начала!` );
+        document.location.reload();
+    }
+    else if(balls>5){
+        alert(`Студент ${student.value} из группы ${group.value} получает ${balls} баллов! Поздравляем, это гуманитарий!` );
+        document.location.reload();
+    }
+    else{
+        alert(`Студент ${student.value} из группы ${group.value} получает ${balls} баллов! Поздравляем, вам повестка!` );
+        document.location.reload();
+    }
+    }
+    else{
+        alert('Исправьте ошибки!');
+        document.documentElement.scrollIntoView(true);
+    }
+    
+    
+    
+    /*if(contact.value == "other"){
+    super0.onfocus = function(event){
+        super0.style.backgroundColor =  'white';
+    }
+    
+     super0.onblur = function(event){
+        if(super0.value ==""){
+            err1.style.display = "block";
+            super0.style.backgroundColor = 'red';
+        }
+        else{
+            super0.style.backgroundColor =  'white';
+            err1.style.display = "none";
+        }
+    }
+    }
+    
+    if(super1){
+    super1.onfocus = function(event){
+        super1.style.backgroundColor =  'white';
+    }
+     super0.onblur = function(event){
+        if(super0.value ==""){
+            err2.style.display = "block";
+            super0.style.backgroundColor = 'red';
+        }
+        else{
+            super0.style.backgroundColor =  'white';
+            err2.style.display = "none";
+        }
+    }
+    }*/
+    
+    
+    console.log(`${student.value}`);
+        console.log(`${group.value}`);
+        console.log(`${page.value}`);
+        console.log(`${rangeest.value}`);
+        console.log(`${funcrangeest.value}`);
+        console.log(`${quantityofcss.value}`);
+        console.log(`${contact.value}`);
+        console.log(`${yesno[0].value}`);
+        console.log(`${yesno[1].value}`);
+        console.log(`${yesno[2].value}`);
+        console.log(`${yesno[3].value}`);
+        console.log(`${yesno[4].value}`);
+        console.log(`${yesno[5].value}`);
+        console.log(`${yesno[6].value}`);
+        console.log(`${yesno[7].value}`);
+        console.log(`${effmenu.value}`);
+        console.log(`${trans.value}`);
+        console.log(`${anim.value}`);
+        console.log(`${pereh.value}`);
+        console.log(`${uncalled.value}`);
+        console.log(`${uncalled2.value}`);
+        console.log(`${effects[0].value}`);
+        console.log(`${tegsdocument.value}`);
+        console.log(`${balls}`);
+        console.log(`${effects[0].value}`);
+        console.log(`${effects[1].value}`);
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    </script>
+ </body>
+ 
+
